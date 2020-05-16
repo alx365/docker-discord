@@ -8,7 +8,7 @@ MAINTAINER alx365
 ENV DEBIAN_FRONTEND noninteractive
 
 # Refresh package lists
-RUN yes | pacman -Syu
+RUN yes | yes | pacman -Syu
 #RUN apt-get -qy dist-upgrade
 
 # Dependencies for the client .deb
