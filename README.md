@@ -17,21 +17,7 @@ If you find this image useful here's how you can help:
 
 # Getting started
 you can build the image yourself.
-
-```bash
-docker build -t mdouchement/zoom-us github.com/mdouchement/docker-zoom-us
-```
-
-With the image locally available, install the wrapper scripts using:
-
-```bash
-docker run -it --rm \
-  --volume /usr/local/bin:/target \
-  mdouchement/zoom-us:latest install
-```
-
-This will install a wrapper script to launch `discord`.
-
+Clone this repo, and then start it... bruh i forgot what the exact command was  `
 ## How it works
 
 The wrapper scripts volume mount the X11 and pulseaudio sockets in the launcher container. The X11 socket allows for the user interface display on the host, while the pulseaudio socket allows for the audio output to be rendered on the host.
