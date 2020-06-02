@@ -1,6 +1,6 @@
 This project is fully inspired of [sameersbn](https://github.com/sameersbn) [Skype](https://github.com/sameersbn/docker-skype)'s containerization.
 
-# mdouchement/zoom-us
+# alx365/docker-discord
 
 # Introduction
 
