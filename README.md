@@ -4,7 +4,7 @@ This project is fully inspired of [sameersbn](https://github.com/sameersbn) [Sky
 
 # Introduction
 
-`Dockerfile` to create a [Docker](https://www.docker.com/) container image with [Zoom](http://www.zoom.us) for Linux with support for audio/video calls.
+`Dockerfile` to create a [Docker](https://www.docker.com/) container image with [discord](http://www.discord.com) for Linux with support for audio/video calls.
 
 The image uses [X11](http://www.x.org) and [Pulseaudio](http://www.freedesktop.org/wiki/Software/PulseAudio/) unix domain sockets on the host to enable audio/video support in Zoom. These components are available out of the box on pretty much any modern linux distribution.
 
@@ -16,16 +16,7 @@ If you find this image useful here's how you can help:
 - Help users resolve their [issues](../../issues?q=is%3Aopen+is%3Aissue).
 
 # Getting started
-
-## Installation
-
-Automated builds of the image are available on [Dockerhub](https://hub.docker.com/r/mdouchement/zoom-us) and is the recommended method of installation.
-
-```bash
-docker pull mdouchement/zoom-us:latest
-```
-
-Alternatively you can build the image yourself.
+you can build the image yourself.
 
 ```bash
 docker build -t mdouchement/zoom-us github.com/mdouchement/docker-zoom-us
@@ -39,11 +30,7 @@ docker run -it --rm \
   mdouchement/zoom-us:latest install
 ```
 
-This will install a wrapper script to launch `zoom`.
-
-> **Note**
->
-> If Zoom is installed on the the host then the host binary is launched instead of starting a Docker container. To force the launch of Zoom in a container use the `zoom-us-wrapper` script. For example, `zoom-us-wrapper zoom` will launch Zoom inside a Docker container regardless of whether it is installed on the host or not.
+This will install a wrapper script to launch `discord`.
 
 ## How it works
 
